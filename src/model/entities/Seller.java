@@ -7,7 +7,7 @@ import java.util.Objects;
 public class Seller implements Serializable {
 
     private Integer id;
-    private String nome;
+    private String name;
     private String email;
     private LocalDate birthDate;
     private Double baseSalary;
@@ -19,7 +19,7 @@ public class Seller implements Serializable {
 
     public Seller(Integer id, String nome, String email, LocalDate birthDate, Double baseSalary, Department department) {
         this.id = id;
-        this.nome = nome;
+        this.name = nome;
         this.email = email;
         this.birthDate = birthDate;
         this.baseSalary = baseSalary;
@@ -35,11 +35,11 @@ public class Seller implements Serializable {
     }
 
     public String getNome() {
-        return nome;
+        return name;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.name = nome;
     }
 
     public String getEmail() {
@@ -91,7 +91,7 @@ public class Seller implements Serializable {
     public String toString() {
         return "Seller{" +
                 "id=" + id +
-                ", nome='" + nome + '\'' +
+                ", nome='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", birthDate=" + birthDate +
                 ", baseSalary=" + baseSalary +
